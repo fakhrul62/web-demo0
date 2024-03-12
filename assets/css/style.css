@@ -1,0 +1,737 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 1160px
+}
+
+*::selection {
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* NAVBAR **************************************************************************************************************/
+.navbar {
+    padding: 20px 0 20px 0;
+}
+
+.navbar-brand {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.navbar-nav {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+/* HERO *********************************************************************************************************************/
+#hero {
+    position: relative;
+
+}
+
+.slick-next,
+.slick-prev {
+    background-color: #70bfff;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #fff;
+}
+
+.hero-bg {
+    padding: 150px 0 150px 0;
+}
+
+.hero-bg-1 {
+    background-image: url(../images/banner-1.jpg);
+}
+
+.hero-bg-2 {
+    background-image: url(../images/banner-2.jpg);
+}
+
+.hero-bg-3 {
+    background-image: url(../images/banner-3.jpg);
+}
+
+.slick-next {
+    top: 50%;
+    right: 5%;
+    z-index: 2;
+    animation-duration: 0.5s;
+
+}
+.slick-prev {
+    top: 50%;
+    left: 5%;
+    z-index: 2;
+}
+
+.hero-text h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.hero-text .btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 25px 15px 25px;
+    border-radius: 50px;
+    color: #172231;
+    border: 2px solid #172231;
+}
+
+.hero-text p {
+    padding: 20px 0 20px 0;
+}
+
+.hero-text .btn:hover {
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+    border: 2px solid rgb(0, 140, 255);
+}
+
+
+/* HERO BOTTOM *********************************************************************************************************************/
+#hero-bt {
+    margin: 100px 0 100px 0;
+    width: 100%;
+}
+
+
+
+#hero-bt .hero-box {
+    background-color: #fff;
+    color: #252d39;
+    padding: 30px;
+    text-align: center;
+
+}
+
+
+
+#hero-bt .hero-box .icon-box i {
+    font-size: 55px;
+    line-height: 70px;
+}
+
+#hero-bt .hero-box .icon-box {
+    color: rgb(0, 140, 255);
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 1px solid rgb(0, 140, 255);
+}
+
+#hero-bt .hero-box h3 {
+    color: #252d39;
+    font-weight: 600;
+    line-height: 4rem;
+    font-size: 23px;
+}
+
+#hero-bt .hero-box p {
+    color: #252d39;
+}
+
+
+
+/* ABOUT ME *********************************************************************************************************************/
+.dashed {
+    position: relative;
+    height: 5px;
+    width: 30px;
+    background: #008cff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.dashed::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: #008cff;
+    border-radius: 10px;
+    right: -60%;
+    top: 0;
+}
+
+.dashed::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 25%;
+    background: #008cff;
+    border-radius: 10px;
+    right: -100%;
+    top: 0;
+}
+
+#about-me .about-left {
+    background-image: url(../images/about-us-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-sub-header {
+    font-size: 30px;
+    font-weight: 600;
+    color: #bfbfbf;
+}
+
+.section-header {
+    font-size: 50px;
+    font-weight: 600;
+    color: #172231;
+}
+
+.section-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8d8d8d;
+}
+
+.section-btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #fff;
+    background-color: #008cff;
+}
+
+.section-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.section-btn::after {
+    background-color: #008cff;
+}
+
+.section-btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+/* COUNTER *********************************************************************************************************************/
+#counter {
+    background-color: #252d39;
+    padding: 80px 0 80px 0;
+    margin: 80px 0 80px 0;
+}
+
+.counter-icon i {
+    color: #008cff;
+    font-size: 50px;
+}
+
+.counter-icon .icon {
+    text-align: right;
+}
+
+.counter-icon .text {
+    color: #fff;
+}
+
+.counter-icon .text h3 {
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.counter-icon .text h4 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* WHY CHOOSE *********************************************************************************************************************/
+#why-choose {
+    padding: 80px 0 80px 0;
+}
+
+.why-img img {
+    width: 100%;
+}
+
+
+#why-choose .icon-box i {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+#why-choose .icon-box {
+    color: rgb(0, 140, 255);
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 140, 255);
+    text-align: center;
+}
+
+.why-text h3 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.why-text p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #8d8d8d;
+}
+
+.why-right {
+    background-image: url(../images/feature-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* SERVICES *********************************************************************************************************************/
+
+#services {
+    background: rgb(37, 45, 57);
+    background: linear-gradient(180deg, rgba(37, 45, 57, 1) 80%, rgba(255, 255, 255, 1) 80%);
+    padding: 80px 0 80px 0;
+}
+
+#services .dashed {
+    margin-left: calc(50% - 30px);
+}
+
+.service-img img {
+    width: 100%;
+}
+
+.service-text {
+    background-color: #fff;
+    padding: 25px;
+    position: relative;
+}
+
+.service-text .icon-serv {
+    position: absolute;
+    background-color: #008cff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 32px;
+    left: 15px;
+    top: -90px;
+}
+
+.service-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #172231;
+}
+
+.service-text p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #8d8d8d;
+}
+
+.service-text a {
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 700;
+    color: #172231;
+    text-transform: uppercase;
+}
+
+.service-text a:hover {
+    color: #008cff;
+}
+
+.service-text a:hover i {
+    transition: all linear .2s;
+    transform: translateX(5px);
+}
+
+/* TEAM *********************************************************************************************************************/
+#team .dashed {
+    margin-left: calc(50% - 30px);
+}
+
+#team {
+    padding: 80px 0 80px 0;
+}
+
+.team-text {
+    margin-top: 50px;
+}
+
+#team .team-text h4 {
+    font-weight: 600;
+}
+
+.green-card {
+    position: relative;
+    width: 100%;
+    background-image: url();
+    z-index: 45;
+}
+
+.green-card::after {
+    background-image: url(../images/team-member-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 60%;
+    width: 60%;
+    top: 0px;
+    right: 25px;
+    transition: ease 0.2s;
+}
+
+.green-card::before {
+    background-image: url(../images/team-member-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 60%;
+    width: 60%;
+    bottom: 0px;
+    left: 25px;
+    transition: ease 0.2s;
+}
+
+.green-sub {
+    position: absolute;
+    background-color: #008cff81;
+    bottom: 0%;
+    opacity: 0;
+    transform: scale(0.8);
+    /* padding: 20px 75px 20px 75px; */
+    width: 94%;
+    height: 20%;
+    transition: all ease .2s;
+}
+
+.green-card:hover::before {
+    bottom: -50px;
+    left: -8px;
+}
+
+.green-card:hover::after {
+    top: -20px;
+    right: -8px;
+}
+
+.green-card:hover .green-sub {
+    opacity: 1;
+    transform: scale(1);
+    transition: all ease .2s;
+}
+
+.green-sub button {
+    text-align: center;
+    width: 50px;
+    margin: 0 5px 0 5px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: ease 0.4s;
+}
+
+.green-sub button:hover {
+    background-color: #fff;
+    color: #008cff;
+    border: 1px solid #fff;
+    filter: drop-shadow(0px 0px 15px #ffffff);
+    transition: ease 0.4s;
+}
+
+.team-text {
+    background-color: #fff;
+    z-index: 456;
+}
+
+/* CASE STUDY *********************************************************************************************************************/
+#case-study {
+    padding: 100px 0 0 0;
+}
+
+.case-btn button {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #fff;
+    background-color: #008cff;
+}
+
+.case-btn button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.case-btn button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.case-btn button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.case-btn button::after {
+    background-color: #008cff;
+}
+
+.case-btn button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.case-text{
+    margin-top: 30px;
+}
+.case-text h4{
+    font-size: 15px;
+    color: #008cff;
+    font-weight: 600;
+}
+.case-text h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.case-img{
+    position: relative;
+    width: 100%;
+}
+.case-box .img-layer{
+    position: absolute;
+   height: 100%;
+   top: 0;
+   left: 0;
+   opacity: 0;
+    width: 100%; 
+    transition: ease .4s;
+    background-color: #008cff9e;
+}
+.img-layer a{
+    background-color: transparent;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+    transition: ease .4s;
+}
+.case-img img{
+    transition: ease .4s;
+}
+.case-img:hover img{
+    transform: scale(1.04);
+    transition: ease .4s;
+}
+.case-img:hover .img-layer{
+    opacity: 1;
+    transform: scale(1);
+    transition: ease .4s;
+}
+.case-img:hover .img-layer a{
+    font-size: 40px;
+    font-weight: 100;
+    transition: ease .4s;
+}
+
+
+/* TESTIMONIAL *********************************************************************************************************************/
+#testimonial{
+    padding: 100px 0 150px 0;
+    background-image: url(../images/testimonial-bg-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#testimonial .dashed {
+    margin-left: calc(50% - 30px);
+}
+.testi-slider img{
+    width: 10%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.testi-slider p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+#testimonial .slick-next {
+    top: 50%;
+    right: -15%;
+    z-index: 2;
+}
+#testimonial .slick-prev {
+    top: 50%;
+    left: -15%;
+    z-index: 2;
+}
+
+
+/* QUOTE *********************************************************************************************************************/
+
+#quote{
+    background-image: url(../images/cta-lg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#quote .backlayer{
+    width: 100%;
+    background: #172231bc;
+    padding: 120px 0 120px 0;
+}
+
+#quote h2{
+    font-weight: 600;
+    color: #fff;
+    font-size: 55px;
+}
+
+
+
+
+/* LATEST NEWS *********************************************************************************************************************/
+#latest{
+    padding: 100px 0 100px 0;
+}
+
+#latest .service-text .span-text {
+    position: absolute;
+    background-color: #008cff;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    font-size: 15px;
+    left: 15px;
+    top: -230px;
+}
+#latest .service-text h5{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* FOOTER *********************************************************************************************************************/
+#footer {
+    background-color: #252d39;
+    padding: 80px 0 80px 0;
+}
+
+.footer-text h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer-text ul {
+    list-style-type: none;
+    line-height: 45px;
+    padding-left: 0;
+}
+
+.footer-text-r h3 {
+    color: #fff;
+}
+
+.footer-text-r ul {
+    list-style-type: none;
+    padding-left: 0;
+
+}
