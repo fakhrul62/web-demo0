@@ -7,13 +7,14 @@
     <title>Web Demo 0</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/fontawesome/css/duotone.css">
     <link rel="stylesheet" href="assets/css/fontawesome/css/light.css">
@@ -22,43 +23,70 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header>
+    <header id="home">
         <nav class="navbar navbar-expand-lg bg-body-tertiary shadow bg-body-tertiary rounded">
-
             <div class="container">
-                <a class="navbar-brand" href="#">Fakhrul</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand" href="index.html">Fakhrul</a>
+                <div class="" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">About Us</a>
+                            <a class="nav-link" href="#about-me">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Portfolio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link">Blog</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Contact</a>
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
+                    <button type="button" class="btn nav-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="navbar-toggler-icon"></i>
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <i type="button" data-bs-dismiss="modal" aria-label="Close"
+                                        class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="navbar-nav1  mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#about-me">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                                        </li>
 
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#blog">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </nav>
     </header>
 
@@ -67,52 +95,49 @@
     <section id="hero">
         <div class="hero-slider">
             <div class="hero-bg-1 hero-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="hero-text">
-                                <h3>We are here to</h3>
-                                <h1>Planning Business</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique blanditiis est
-                                    culpa
-                                    minus veritatis hic at. Excepturi itaque consequuntur eligendi.</p>
-                                <button type="button" class="btn btn-outline-primary">More details</button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-12">
+                                <div class="hero-text">
+                                    <h3>We are here to</h3>
+                                    <h1>Planning Business</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique blanditiis est culpa
+                                        minus veritatis hic at. Excepturi itaque consequuntur eligendi.</p>
+                                    <button type="button" class="btn btn-outline-primary">More details</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
             <div class="hero-bg-2 hero-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="hero-text">
-                                <h3>We are here to</h3>
-                                <h1>Planning Business</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique blanditiis est
-                                    culpa
-                                    minus veritatis hic at. Excepturi itaque consequuntur eligendi.</p>
-                                <button type="button" class="btn btn-outline-primary">More details</button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-12">
+                                <div class="hero-text">
+                                    <h3>We are here to</h3>
+                                    <h1>Planning Business</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique blanditiis est culpa
+                                        minus veritatis hic at. Excepturi itaque consequuntur eligendi.</p>
+                                    <button type="button" class="btn btn-outline-primary">More details</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
             <div class="hero-bg-3 hero-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="hero-text">
-                                <h3>We are here to</h3>
-                                <h1>Planning Business</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique blanditiis est
-                                    culpa
-                                    minus veritatis hic at. Excepturi itaque consequuntur eligendi.</p>
-                                <button type="button" class="btn btn-outline-primary">More details</button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-12">
+                                <div class="hero-text">
+                                    <h3>We are here to</h3>
+                                    <h1>Planning Business</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique blanditiis est culpa
+                                        minus veritatis hic at. Excepturi itaque consequuntur eligendi.</p>
+                                    <button type="button" class="btn btn-outline-primary">More details</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </section>
@@ -121,7 +146,7 @@
     <section id="hero-bt">
         <div class="container">
             <div class="row w-100">
-                <div class="col-3">
+                
                     <div class="hero-box shadow bg-body-tertiary">
                         <div class="icon-box">
                             <img src="assets/images/001-letter-m.png" alt="">
@@ -129,8 +154,8 @@
                         <h3>MONGODB </h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                </div>
-                <div class="col-3">
+            
+                
                     <div class="hero-box shadow bg-body-tertiary">
 
                         <div class="icon-box">
@@ -139,8 +164,8 @@
                         <h3>EXPRESS</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                </div>
-                <div class="col-3">
+            
+                
                     <div class="hero-box shadow bg-body-tertiary ">
 
                         <div class="icon-box">
@@ -149,8 +174,8 @@
                         <h3>REACT</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                </div>
-                <div class="col-3">
+            
+                
                     <div class="hero-box shadow bg-body-tertiary">
 
                         <div class="icon-box">
@@ -159,7 +184,7 @@
                         <h3>NODE</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                </div>
+            
             </div>
         </div>
     </section>
@@ -168,12 +193,12 @@
     <section id="about-me">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="">
                     <div class="about-left">
                         <img src="assets/images/about-us.png" alt="">
                     </div>
                 </div>
-                <div class="col-6 d-flex">
+                <div class="d-flex">
                     <div class="about-right align-self-center">
                         <span class="dashed"></span>
                         <h4 class="section-sub-header">About Us</h4>
@@ -192,50 +217,48 @@
     <section id="counter">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <div class="counter-icon row d-flex">
-                        <div class="col-3 icon align-self-center">
+                
+                    <div class="counter-icon">
+                        <div class="icon">
                             <i class="fa-thin fa-record-vinyl"></i>
                         </div>
-                        <div class="col-9 text align-self-center">
+                        <div class="text">
                             <h3><span class="counter">50</span>+</h3>
                             <h4>Projects Done</h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="counter-icon row d-flex">
-                        <div class="col-3 icon align-self-center">
+                
+                    <div class="counter-icon">
+                        <div class="icon">
                             <i class="fa-thin fa-calendar-days"></i>
                         </div>
-                        <div class="col-9 text align-self-center">
+                        <div class="text">
                             <h3><span class="counter">25</span>+</h3>
                             <h4>Years Experience</h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="counter-icon row d-flex">
-                        <div class="col-3 icon align-self-center">
+                
+                    <div class="counter-icon">
+                        <div class="icon">
                             <i class="fa-thin fa-trophy"></i>
                         </div>
-                        <div class="col-9 text align-self-center">
+                        <div class="text">
                             <h3><span class="counter">250</span>+</h3>
                             <h4>Awards Win</h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="counter-icon row d-flex">
-                        <div class="col-3 icon align-self-center">
+                
+                
+                    <div class="counter-icon">
+                        <div class="icon">
                             <i class="fa-thin fa-face-smile-beam"></i>
                         </div>
-                        <div class="col-9 text align-self-center">
+                        <div class="text">
                             <h3><span class="counter">500</span>+</h3>
                             <h4>Happy Coustomers</h4>
                         </div>
                     </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -244,7 +267,7 @@
     <section id="why-choose">
         <div class="container">
             <div class="row">
-                <div class="col-6 d-flex">
+                <div class="d-flex">
                     <div class="align-self-center">
                         <span class="dashed"></span>
                         <h4 class="section-sub-header">Why Choose Us</h4>
@@ -252,31 +275,31 @@
                         <p class="mt-5 section-text">Excepteur sint occaecat cupidatat non proident sunt iculpa qui
                             officia deserunt mollit anim est. laborum sed perspiciatis unde omnis natus error sit
                             voluptatem accusantium.</p>
-                        <div class="row d-flex mt-4">
-                            <div class="col-2 why-icon">
+                        <div class="why-icon mt-4">
+                            <div class="">
                                 <div class="icon-box">
                                     <i class="fa-thin fa-snowflake"></i>
                                 </div>
                             </div>
-                            <div class="why-text col-9 align-self-center">
+                            <div class="why-text">
                                 <h3>CREATIVE DESIGN</h3>
                                 <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.</p>
                             </div>
                         </div>
-                        <div class="row d-flex mt-3">
-                            <div class="col-2 why-icon">
+                        <div class="why-icon mt-3">
+                            <div class="">
                                 <div class="icon-box">
                                     <i class="fa-thin fa-snowflake"></i>
                                 </div>
                             </div>
-                            <div class="why-text col-9 align-self-center">
+                            <div class="why-text">
                                 <h3>CREATIVE DESIGN</h3>
                                 <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 why-right d-flex ">
+                <div class="why-right d-flex ">
                     <div class="why-img align-self-center ">
                         <img src="assets/images/feature.jpg" alt="">
                     </div>
@@ -290,14 +313,14 @@
     <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-6 m-auto text-center">
+                <div class="col-12 col-lg-6 col-md-6 m-auto text-center">
                     <span class="dashed"></span>
                     <h4 class="section-sub-header">Best Service</h4>
                     <h3 class="section-header text-white mb-5">SERVICE WE PROVIDE</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4 service-img">
+            <div class="serv-row">
+                <div class="service-img">
                     <div class="shadow">
                         <img src="assets/images/service-1.jpg" alt="">
                         <div class="service-text">
@@ -308,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 service-img">
+                <div class="service-img">
                     <div class="shadow">
                         <img src="assets/images/service-2.jpg" alt="">
                         <div class="service-text">
@@ -319,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 service-img">
+                <div class="service-img">
                     <div class="shadow">
                         <img src="assets/images/service-3.jpg" alt="">
                         <div class="service-text">
@@ -337,7 +360,7 @@
     <section id="team">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-6 text-center m-auto">
+                <div class="col-12 col-lg-6 col-md-6 text-center m-auto">
                     <div>
                         <span class="dashed"></span>
                         <h4 class="section-sub-header">Our Team</h4>
@@ -346,13 +369,13 @@
                 </div>
             </div>
 
-            <div class="row column-gap-0">
-                <div class="col-4">
+            <div class="team-row">
+                <div class="">
                     <div class="row">
                         <div class="col green-card">
                             <img src="assets/images/team-1.jpg" alt="">
-                            <div class="green-sub text-center d-flex">
-                                <div class="align-self-center m-auto">
+                            <div class="">
+                                <div class="green-sub text-center m-auto">
                                     <span><button><i class="fa-brands fa-facebook-f"></i></button></span>
                                     <span><button><i class="fa-brands fa-x-twitter"></i></button></span>
                                     <span><button><i class="fa-brands fa-instagram"></i></button></span>
@@ -368,12 +391,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="">
                     <div class="row">
                         <div class="col green-card">
                             <img src="assets/images/team-2.jpg" alt="">
-                            <div class="green-sub text-center d-flex">
-                                <div class="align-self-center m-auto">
+                            <div class="">
+                                <div class="green-sub text-center m-auto">
                                     <span><button><i class="fa-brands fa-facebook-f"></i></button></span>
                                     <span><button><i class="fa-brands fa-x-twitter"></i></button></span>
                                     <span><button><i class="fa-brands fa-instagram"></i></button></span>
@@ -389,12 +412,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="">
                     <div class="row">
                         <div class="col green-card">
                             <img src="assets/images/team-3.jpg" alt="">
-                            <div class="green-sub text-center d-flex">
-                                <div class="align-self-center m-auto">
+                            <div class="">
+                                <div class="green-sub text-center m-auto">
                                     <span><button><i class="fa-brands fa-facebook-f"></i></button></span>
                                     <span><button><i class="fa-brands fa-x-twitter"></i></button></span>
                                     <span><button><i class="fa-brands fa-instagram"></i></button></span>
@@ -417,7 +440,7 @@
     </section>
 
     <!-- Case Studies -->
-    <section id="case-study">
+    <section id="case-study" class="hide">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -509,7 +532,7 @@
     </section>
 
     <!-- Testimonial -->
-    <section id="testimonial">
+    <section id="testimonial" class="hide">
         <div class="container">
             <div class="row my-5">
                 <div class="col-7 m-auto text-center ">
@@ -525,15 +548,18 @@
                     <div class="testi-slider">
                         <div class="text-back">
                             <img src="assets/images/client-1.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum animi quaerat ullam mollitia ratione perferendis ipsa expedita, facilis laborum quae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum animi quaerat ullam
+                                mollitia ratione perferendis ipsa expedita, facilis laborum quae.</p>
                         </div>
                         <div class="text-back">
                             <img src="assets/images/client-1.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum animi quaerat ullam mollitia ratione perferendis ipsa expedita, facilis laborum quae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum animi quaerat ullam
+                                mollitia ratione perferendis ipsa expedita, facilis laborum quae.</p>
                         </div>
                         <div class="text-back">
                             <img src="assets/images/client-1.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum animi quaerat ullam mollitia ratione perferendis ipsa expedita, facilis laborum quae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum animi quaerat ullam
+                                mollitia ratione perferendis ipsa expedita, facilis laborum quae.</p>
                         </div>
                     </div>
                 </div>
@@ -542,7 +568,7 @@
     </section>
 
     <!-- Quote -->
-    <section id="quote">
+    <section id="quote" class="hide">
         <div class="backlayer">
             <div class="container">
                 <div class="row">
@@ -552,16 +578,16 @@
                 </div>
                 <div class="row">
                     <div class="col-6 case-btn text-center m-auto">
-                            <button class="mt-3">More services</button>
+                        <button class="mt-3">More services</button>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </section>
 
-    <!-- Footer -->
-    <section id="latest">
+    <!-- Latest -->
+    <section id="latest" class="hide">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -579,8 +605,10 @@
                             <h5>BY <b>ADMIN</b>/ ON <b>1 SEP, 2018</b></h5>
                             <h3>ELIT DUIED AIUSMOD TEMPOR DID LABORE DOLORY</h3>
                             <div><span class="dashed"></span></div>
-                            <p>Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.</p>
-                           
+                            <p>Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit
+                                anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.
+                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -592,8 +620,10 @@
                             <h5>BY <b>ADMIN</b>/ ON <b>1 SEP, 2018</b></h5>
                             <h3>ELIT DUIED AIUSMOD TEMPOR DID LABORE DOLORY</h3>
                             <div><span class="dashed"></span></div>
-                            <p>Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.</p>
-                           
+                            <p>Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit
+                                anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.
+                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -605,17 +635,83 @@
                             <h5>BY <b>ADMIN</b>/ ON <b>1 SEP, 2018</b></h5>
                             <h3>ELIT DUIED AIUSMOD TEMPOR DID LABORE DOLORY</h3>
                             <div><span class="dashed"></span></div>
-                            <p>Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.</p>
-                           
+                            <p>Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit
+                                anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.
+                            </p>
+
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </section>
+
+    <!-- Contact -->
+    <section id="contact" class="hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 m-auto text-center">
+                    <span class="dashed"></span>
+                    <h2 class="section=text">WANT TO</h2>
+                    <h2 class="section-header">CONNECT WITH US?</h2>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 m-auto">
+                    <form method="post" action="contact.php" class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" name="fname" class="form-control shadow" id="validationCustom01"
+                                placeholder="Mark" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Last name</label>
+                            <input type="text" name="lname" class="form-control shadow " id="validationCustom02"
+                                placeholder="Otto" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control shadow " id="validationCustom01"
+                                placeholder="example@mail.com" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Phone Number</label>
+                            <input type="text" name="phone" class="form-control shadow " id="validationCustom02"
+                                placeholder="+xx xxxxx" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="">
+                                <label for="validationCustom02" class="form-label">Message</label>
+                                <textarea class="form-control shadow " name="message"
+                                    placeholder="Leave your message here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="contact-btn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer id="footer">
+    <footer id="footer" class="hide">
         <div class="container">
             <div class="row">
                 <div class="col-6 pe-5">
@@ -657,22 +753,12 @@
 
     <!-- Scripts -->
 
-    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/venobox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
-    </script>
     <script src="assets/js/main.js"></script>
 
 </body>

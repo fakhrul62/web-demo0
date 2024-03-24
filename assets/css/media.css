@@ -1,0 +1,455 @@
+/*************** Extra small ******************************************************************************************************/
+/**********************************************************************************************************************************/
+@media screen and (max-width:576px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 5px 0;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .modal-header i{
+        background-color: transparent;
+        color: #fff;
+        font-size: 25px;
+    }
+    .modal-header{
+        justify-content: end;
+    }
+    .modal-content{
+        background-color: transparent;
+        border: none;
+    }
+    .modal-header, .modal-footer{
+        border-bottom: none;
+    }
+    .modal-header > h1{
+        color: #fff;
+    }
+    .modal-body{
+        background-color: #fff;
+        border-radius: 5px;
+        border: none;
+    }
+    .navbar-nav1{
+        list-style: none;
+        padding-left: 0;
+    }
+    .navbar-nav1 li{
+        padding: 10px 20px;
+    }
+
+    /* HERO */
+    .slick-next, 
+    .slick-prev, .slick-dots  {
+        display: none!important;
+    }
+    .hero-bg{
+        background-position: center;
+        background-size: cover;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    .hero-text h3 {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: 42px;
+    }
+    .hero-text p {
+        padding: 20px 0 20px 0;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .hero-text .btn {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 15px 25px 15px 25px;
+        border-radius: 50px;
+        color: #000;
+        border: 2px solid #000;
+    }
+
+    /* HERO-BOTTOM */
+    #hero-bt .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+    /* About Me */
+    #about-me .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 30px;
+    }
+    /* Counter */
+    #counter .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #counter .counter-icon{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        row-gap: 20px;
+        column-gap: 50px;
+    }
+    #counter .counter-icon .icon{
+        text-align: right;
+    }#counter .counter-icon .text{
+        text-align: left;
+        width: 100%;
+    }
+    /* why choose */
+    #why-choose .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #why-choose .why-icon{
+        grid-template-columns: 30% 70%;
+    }
+    .serv-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* team */
+    #team .team-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .green-sub button {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+
+
+
+}
+
+/***************** Medium ***********************************************************************************************************/
+/************************************************************************************************************************************/
+@media screen and (min-width: 577px) and (max-width:768px) {
+/* NAVBAR */
+.navbar {
+    padding: 5px 0;
+}
+.navbar-nav{
+    display: none;
+}
+.modal-header i{
+    background-color: transparent;
+    color: #fff;
+    font-size: 25px;
+}
+.modal-header{
+    justify-content: end;
+}
+.modal-content{
+    background-color: transparent;
+    border: none;
+}
+.modal-header, .modal-footer{
+    border-bottom: none;
+}
+.modal-header > h1{
+    color: #fff;
+}
+.modal-body{
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.navbar-nav1{
+    list-style: none;
+    padding-left: 0;
+}
+.navbar-nav1 li{
+    padding: 10px 20px;
+}
+
+/* HERO */
+.slick-next, 
+.slick-prev, .slick-dots {
+    display: none!important;
+}
+.hero-bg{
+    background-position: center;
+    background-size: cover;
+}
+.hero-text{
+    width: 100%;
+}
+.hero-text h3 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    font-size: 42px;
+}
+.hero-text p {
+    padding: 20px 0 20px 0;
+    color: #000;
+    font-weight: 500;
+}
+
+.hero-text .btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 25px 15px 25px;
+    border-radius: 50px;
+    color: #000;
+    border: 2px solid #000;
+}
+/* HERO-BOTTOM */
+#hero-bt .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+/* About Me */
+#about-me .row{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 30px;
+}
+/* Counter */
+#counter .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* why choose */
+#why-choose .row{
+    grid-template-columns: repeat(1, 1fr);
+}
+#why-choose .why-icon{
+    grid-template-columns: 20% 80%;
+}
+.serv-row{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* team */
+#team .team-row{
+    grid-template-columns: repeat(2, 1fr);
+}
+.green-sub button {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+}
+
+
+
+/****************** Large ***********************************************************************************************************/
+/************************************************************************************************************************************/
+@media screen and (min-width: 769px) and (max-width:992px){
+    .nav-modal{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+    /* HERO */
+    .slick-next, 
+    .slick-prev, .slick-dots  {
+        display: none!important;
+    }
+    .hero-bg{
+        background-position: center;
+        background-size: cover;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    .hero-text h3 {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: 42px;
+    }
+    .hero-text p {
+        padding: 20px 0 20px 0;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .hero-text .btn {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 15px 25px 15px 25px;
+        border-radius: 50px;
+        color: #000;
+        border: 2px solid #000;
+    }
+    /* HERO-BOTTOM */
+    #hero-bt .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    /* About Me */
+    #about-me .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
+
+    /* Counter */
+    #counter .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* why choose */
+    #why-choose .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #why-choose .why-icon{
+        grid-template-columns: 35% 65%;
+    }
+    .serv-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* team */
+    #team .team-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .green-sub button {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+}
+
+
+/****************** X-Large ***********************************************************************************************************/
+/**************************************************************************************************************************************/
+@media screen and (min-width: 993px) and (max-width:1440px) {
+    .nav-modal{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+    .container {
+        width: 1160px
+    }
+    /* HERO */
+    .slick-next, 
+    .slick-prev, .slick-dots {
+        display: none!important;
+    }
+    .hero-bg{
+        background-position: center;
+        background-size: cover;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    .hero-text h3 {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: 42px;
+    }
+    .hero-text p {
+        padding: 20px 0 20px 0;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .hero-text .btn {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 15px 25px 15px 25px;
+        border-radius: 50px;
+        color: #000;
+        border: 2px solid #000;
+    }
+    /* HERO-BOTTOM */
+    #hero-bt .row{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    /* About Me */
+    #about-me .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
+    /* Counter */
+    #counter .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* why choose */
+    #why-choose .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #why-choose .why-icon{
+        grid-template-columns: 35% 65%;
+    }
+    .green-sub button {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    
+
+
+}
+
+
+/****************** XL-Large ***********************************************************************************************************/
+/**************************************************************************************************************************************/
+@media screen and (min-width: 1441px) {
+    .nav-modal{
+        display: none;
+    }
+    .container {
+        width: 1160px
+    }
+
+}
+
+ 

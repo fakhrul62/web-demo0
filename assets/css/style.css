@@ -8,9 +8,7 @@ img {
     width: 100%;
 }
 
-.container {
-    width: 1160px
-}
+
 
 *::selection {
     background-color: rgb(0, 140, 255);
@@ -25,6 +23,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration: none;
 }
+
+.hide{
+    display: none;
+}
+/* Smooth scroll */
+:root {
+    scroll-behavior: smooth;
+  }
+
 
 
 /* NAVBAR **************************************************************************************************************/
@@ -67,7 +74,23 @@ a {
 
 .hero-bg {
     padding: 150px 0 150px 0;
+    position: relative;
 }
+.hero-text{
+    position: relative;
+}
+.hero-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #787878;
+    opacity: 0.4;
+}
+
+
 
 .hero-bg-1 {
     background-image: url(../images/banner-1.jpg);
@@ -96,12 +119,14 @@ a {
 
 .hero-text h3 {
     text-transform: uppercase;
+    color: #000;
     font-weight: 600;
     font-size: 28px;
 }
 
 .hero-text h1 {
     text-transform: uppercase;
+    color: #000;
     font-weight: 600;
     font-size: 65px;
 }
@@ -111,7 +136,7 @@ a {
     font-weight: 600;
     padding: 15px 25px 15px 25px;
     border-radius: 50px;
-    color: #172231;
+    color: #000;
     border: 2px solid #172231;
 }
 
@@ -142,7 +167,11 @@ a {
 
 }
 
-
+#hero-bt .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
 
 #hero-bt .hero-box .icon-box i {
     font-size: 55px;
@@ -213,7 +242,10 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+#about-me .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .section-sub-header {
     font-size: 30px;
     font-weight: 600;
@@ -286,15 +318,19 @@ a {
     padding: 80px 0 80px 0;
     margin: 80px 0 80px 0;
 }
-
+#counter .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#counter .counter-icon{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
 .counter-icon i {
     color: #008cff;
     font-size: 50px;
 }
 
-.counter-icon .icon {
-    text-align: right;
-}
 
 .counter-icon .text {
     color: #fff;
@@ -314,11 +350,17 @@ a {
 #why-choose {
     padding: 80px 0 80px 0;
 }
-
+#why-choose .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .why-img img {
     width: 100%;
 }
-
+#why-choose .why-icon{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
 
 #why-choose .icon-box i {
     font-size: 35px;
@@ -370,7 +412,11 @@ a {
 .service-img img {
     width: 100%;
 }
-
+.serv-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 .service-text {
     background-color: #fff;
     padding: 25px;
@@ -424,7 +470,11 @@ a {
 #team .dashed {
     margin-left: calc(50% - 30px);
 }
-
+#team .team-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
 #team {
     padding: 80px 0 80px 0;
 }
@@ -482,6 +532,10 @@ a {
     width: 94%;
     height: 20%;
     transition: all ease .2s;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    align-content: center;
 }
 
 .green-card:hover::before {
@@ -501,7 +555,6 @@ a {
 }
 
 .green-sub button {
-    text-align: center;
     width: 50px;
     margin: 0 5px 0 5px;
     height: 50px;
@@ -708,6 +761,81 @@ a {
     font-weight: 400;
 }
 
+
+
+
+/* CONTACT *********************************************************************************************************************/
+
+
+
+#contact{
+    padding: 100px 0;
+}
+
+#contact .dashed {
+    margin-left: calc(50% - 30px);
+}
+
+#contact .section-header{
+    color: #105696 ;
+}
+
+.form-label, .form-check-label{
+    color:#4a5a70;
+    font-weight: 600;
+}
+
+#contact ::placeholder{
+    color: #888686;
+    font-weight: 400;
+}
+
+.label{
+    color: #888686;
+    font-weight: 400;
+}
+
+.contact-btn{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #105696, #1163af);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    border: 2px solid #105696;
+}
+
+.contact-btn:hover{
+    background-color: rgb(16, 86, 150);
+    box-shadow: rgba(16, 85, 150, 0.576) 0px 0px 20px;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+
+#contact input{
+    background-color: #fbfbfb;
+    transition:  ease .3s;
+    border-bottom: 4px solid #e3e3e3;
+    padding: 10px 20px;
+
+}
+#contact input:hover{
+    background-color: #fbfbfb;
+    border-bottom: 4px solid #008cff;
+    transition:  ease .3s;
+}
+#contact textarea{
+    background-color: #fbfbfb;
+    transition:  ease .3s;
+    border-bottom: 4px solid #e3e3e3;
+}
+#contact textarea:hover{
+    background-color: #fbfbfb;
+    border-bottom: 4px solid #008cff;
+    transition:  ease .3s;
+}
 /* FOOTER *********************************************************************************************************************/
 #footer {
     background-color: #252d39;
