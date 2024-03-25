@@ -95,15 +95,15 @@
         padding: 0 30px;
     }
     /* Counter */
-    #counter .row{
+    #counter .counter-row{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 40% 50%;
     }
     #counter .counter-icon{
         display: grid;
         grid-template-columns: 40% 50%;
         row-gap: 20px;
-        column-gap: 50px;
+        column-gap: 10%;
     }
     #counter .counter-icon .icon{
         text-align: right;
@@ -139,11 +139,20 @@
         align-items: center;
         justify-content: start;
     }
-    .case-box{
+    #case-study .case-box{
         grid-template-columns: repeat(1, 1fr);
     }
-    /* Testimonial */
-    
+    /* Latest News */
+    #latest .latest-row{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    /* footer */
+    #footer .footer-row{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
 
 
 
@@ -242,7 +251,7 @@
     padding: 0 30px;
 }
 /* Counter */
-#counter .row{
+#counter .counter-row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -270,12 +279,22 @@
 #case-study .text-row{
     grid-template-columns: repeat(1, 1fr);
 }
-.case-btn{
+#case-study .case-btn{
     align-items: center;
     justify-content: start;
 }
-.case-box{
+#case-study .case-box{
     grid-template-columns: repeat(2, 1fr);
+}
+/* Latest News */
+#latest .latest-row{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+/* footer */
+#footer .footer-row{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
 }
 
 }
@@ -348,7 +367,7 @@
     }
 
     /* Counter */
-    #counter .row{
+    #counter .counter-row{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -376,12 +395,22 @@
     #case-study .text-row{
         grid-template-columns: 60% 40%;
     }
-    .case-btn{
+    #case-study .case-btn{
         align-items: center;
         justify-content: end;
     }
-    .case-box{
+    #case-study .case-box{
         grid-template-columns: repeat(2, 1fr);
+    }
+    /* Latest News */
+    #latest .latest-row{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    /* footer */
+    #footer .footer-row{
+        grid-template-columns: 50% 40%;
+        gap: 10%;
     }
 
 }
@@ -455,7 +484,7 @@
         padding: 0 30px;
     }
     /* Counter */
-    #counter .row{
+    #counter .counter-row{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -470,6 +499,11 @@
         width: 45px;
         height: 45px;
         line-height: 45px;
+    }
+    /* footer */
+    #footer .footer-row{
+        grid-template-columns: 30% 20% 20%;
+        gap: 10%;
     }
     
 
