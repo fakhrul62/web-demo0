@@ -30,7 +30,7 @@ $(function () {
         arrows: true,
         infinite: true,
         speed: 300,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         prevArrow:'<button type="button" class="slick-prev"><i class="fa-thin fa-chevron-left"></i></button>',
         nextArrow:'<button type="button" class="slick-next"><i class="fa-thin fa-chevron-right"></i></button>',
@@ -64,13 +64,15 @@ $(function () {
       });
   }); 
   
+/// Testimonial
+
   $(document).ready(function(){
     $('.testi-slider').slick({
         dots: false,
         arrows: true,
         infinite: true,
         speed: 300,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         prevArrow:'<button type="button" class="slick-prev"><i class="fa-thin fa-chevron-left"></i></button>',
         nextArrow:'<button type="button" class="slick-next"><i class="fa-thin fa-chevron-right"></i></button>',
@@ -105,7 +107,7 @@ $(function () {
   });
 
 
-
+// Lightbox
   lightbox.option({
     'resizeDuration': 400,
     'wrapAround': false,

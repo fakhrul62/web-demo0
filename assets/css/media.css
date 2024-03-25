@@ -131,7 +131,19 @@
         height: 35px;
         line-height: 35px;
     }
-
+    /* Case Studies */
+    #case-study .text-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .case-btn{
+        align-items: center;
+        justify-content: start;
+    }
+    .case-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Testimonial */
+    
 
 
 
@@ -254,6 +266,17 @@
     height: 35px;
     line-height: 35px;
 }
+/* Case Studies */
+#case-study .text-row{
+    grid-template-columns: repeat(1, 1fr);
+}
+.case-btn{
+    align-items: center;
+    justify-content: start;
+}
+.case-box{
+    grid-template-columns: repeat(2, 1fr);
+}
 
 }
 
@@ -348,6 +371,17 @@
         width: 40px;
         height: 40px;
         line-height: 40px;
+    }
+    /* Case Studies */
+    #case-study .text-row{
+        grid-template-columns: 60% 40%;
+    }
+    .case-btn{
+        align-items: center;
+        justify-content: end;
+    }
+    .case-box{
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }

@@ -583,7 +583,15 @@ a {
 #case-study {
     padding: 100px 0 0 0;
 }
-
+#case-study .text-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.case-btn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 .case-btn button {
     position: relative;
     font-size: 17px;
@@ -646,6 +654,10 @@ a {
 .case-img{
     position: relative;
     width: 100%;
+}
+.case-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .case-box .img-layer{
     position: absolute;
